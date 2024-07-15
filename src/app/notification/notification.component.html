@@ -1,0 +1,11 @@
+<!-- @if (displayNotification == true) {
+<div></div>
+} @else if(displayNotification == false) { -->
+<!-- <div [hidden]="displayNotification" class="alert alert-success"> -->
+    <div class="alert alert-success" [ngClass]="{fadeOut: displayNotification}">
+
+    <p class="notification-p">This website uses cookies to provide better user experience.</p>
+
+    <div class="close"><button class="btn" (click)="closeNotification()">X</button></div>
+</div>
+<!-- } -->
